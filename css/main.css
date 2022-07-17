@@ -3,10 +3,10 @@
     transform: translatex(0px);
   }
   50% {
-    transform: translatex(-40%);
+    transform: translatex(-5%);
   }
   100% {
-    transform: translatex(0px);
+    transform: translatex(0);
   }
 }
 * {
@@ -78,9 +78,12 @@ a {
   display: block;
   color: black;
   text-align: center;
-  padding: 5px 16px;
+  padding: 0 16px;
   text-decoration: none;
   font-size: 16px;
+}
+.navigation__elementList {
+  padding: 10px;
 }
 .navigation__elementList:hover {
   background-color: #920303;
