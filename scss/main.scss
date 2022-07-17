@@ -105,6 +105,69 @@
 
 
 //swiper
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.box1 {
+  flex-grow: 2;
+  height: 300px;
+  font-size: 16px;
+}
+
+.responsiveSwiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+.swiper {
+  &__box {
+    padding-left: 10%;
+    padding-top: 10%;
+    max-height: 500px;
+    height: 400px;
+
+    a {
+      padding: 15px 40px;
+    }
+  }
+
+  &__text {
+    text-align: left;
+    font-size: 1rem;
+
+    p {
+      padding-top: 20px;
+    }
+  }
+
+  h1 {
+    font-size: calc(1.5rem + 2vw);
+
+    a {
+      background: $color-mainFonts;
+      color: $color-white;
+      padding: 0 5px;
+    }
+  }
+}
 
 
 //banners
@@ -150,7 +213,7 @@
 
   &__element {
     position: relative;
-    color: white;
+    color: $color-white;
     max-width: 935px;
     width: 100%;
     height: auto;
@@ -178,21 +241,21 @@
 
   &__elementA {
     display: inline-block;
-    color: white;
-    background: black;
+    color: $color-white;
+    background: $color-mainFonts;
     padding: 0 5px;
   }
 
   &__elementB {
     display: inline-block;
-    color: white;
+    color: $color-white;
     background: $color-buttons;
     padding: 0 5px;
   }
 
   &__icons {
     display: flex;
-    width: 20px;
+    width: 25px;
     margin-right: 5px;
     position: relative;
     top: -15px;
@@ -206,7 +269,7 @@
 .button {
   background: $color-buttons;
   padding: 2% 11%;
-  color: white;
+  color: $color-white;
   font-size: 14px;
   line-height: 14px;
   border-radius: 10px;
@@ -228,3 +291,4 @@
   }
 
 }
+

@@ -18,6 +18,10 @@ a {
   --bs-gutter-x: 0;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  width: 10%;
+}
+
 @media (min-width: 992px) {
   .containerBox {
     display: flex;
@@ -109,6 +113,64 @@ a {
     text-align: left;
   }
 }
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.box1 {
+  flex-grow: 2;
+  height: 300px;
+  font-size: 16px;
+}
+
+.responsiveSwiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .responsiveSwiper {
+    flex-direction: row;
+  }
+}
+
+.swiper__box {
+  padding-left: 10%;
+  padding-top: 10%;
+  max-height: 500px;
+  height: 400px;
+}
+.swiper__box a {
+  padding: 15px 40px;
+}
+.swiper__text {
+  text-align: left;
+  font-size: 1rem;
+}
+.swiper__text p {
+  padding-top: 20px;
+}
+.swiper h1 {
+  font-size: calc(1.5rem + 2vw);
+}
+.swiper h1 a {
+  background: #000000;
+  color: #FFFFFF;
+  padding: 0 5px;
+}
+
 .banners {
   margin: 0 auto;
   padding: 0 20px;
@@ -150,7 +212,7 @@ a {
 }
 .boxes__element {
   position: relative;
-  color: white;
+  color: #FFFFFF;
   max-width: 935px;
   width: 100%;
   height: auto;
@@ -175,19 +237,19 @@ a {
 }
 .boxes__elementA {
   display: inline-block;
-  color: white;
-  background: black;
+  color: #FFFFFF;
+  background: #000000;
   padding: 0 5px;
 }
 .boxes__elementB {
   display: inline-block;
-  color: white;
+  color: #FFFFFF;
   background: #920303;
   padding: 0 5px;
 }
 .boxes__icons {
   display: flex;
-  width: 20px;
+  width: 25px;
   margin-right: 5px;
   position: relative;
   top: -15px;
@@ -199,7 +261,7 @@ a {
 .button {
   background: #920303;
   padding: 2% 11%;
-  color: white;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 14px;
   border-radius: 10px;
