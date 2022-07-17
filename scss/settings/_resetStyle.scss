@@ -8,4 +8,9 @@ ul {
 }
 a {
   color: black;
+  text-decoration: none;
+}
+.row {
+  padding: 0;
+  --bs-gutter-x: 0;
 }

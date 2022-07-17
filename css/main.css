@@ -10,6 +10,12 @@ ul {
 
 a {
   color: black;
+  text-decoration: none;
+}
+
+.row {
+  padding: 0;
+  --bs-gutter-x: 0;
 }
 
 @media (min-width: 992px) {
@@ -130,5 +136,87 @@ a {
 
 .banners::-webkit-scrollbar {
   display: none;
+}
+
+.boxes {
+  padding: 0 10px;
+}
+@media (min-width: 992px) {
+  .boxes {
+    display: flex;
+    justify-content: space-evenly;
+    height: 415px;
+  }
+}
+.boxes__element {
+  position: relative;
+  color: white;
+  max-width: 935px;
+  width: 100%;
+  height: auto;
+}
+.boxes img {
+  width: 100%;
+  height: auto;
+}
+.boxes__text {
+  position: absolute;
+  top: 0;
+  line-height: 20px;
+  font-size: 14px;
+  padding: 8% 12%;
+}
+@media (min-width: 768px) {
+  .boxes__text {
+    line-height: 32px;
+    padding: 10% 12%;
+    font-size: 1rem;
+  }
+}
+.boxes__elementA {
+  display: inline-block;
+  color: white;
+  background: black;
+  padding: 0 5px;
+}
+.boxes__elementB {
+  display: inline-block;
+  color: white;
+  background: #920303;
+  padding: 0 5px;
+}
+.boxes__icons {
+  display: flex;
+  width: 20px;
+  margin-right: 5px;
+  position: relative;
+  top: -15px;
+}
+.boxes__icon {
+  margin-right: 10px;
+}
+
+.button {
+  background: #920303;
+  padding: 2% 11%;
+  color: white;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 10px;
+  position: absolute;
+}
+.button-firstBox {
+  bottom: 10px;
+}
+.button-secondBox {
+  bottom: 15px;
+}
+@media (min-width: 768px) {
+  .button {
+    padding: 3% 12%;
+  }
+  .button-firstBox {
+    bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -10,5 +10,3 @@ function myFunction() {
         y.className = "navigation__list";
     }
 }
-
-document.querySelector(".banners").scrollIntoView()

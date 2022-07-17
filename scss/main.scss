@@ -119,20 +119,112 @@
   height: 30px;
 
 
-  @media (min-width: $desktop){
+  @media (min-width: $desktop) {
     width: calc(1920px - 600px);
   }
+
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
   }
-  :nth-child(2){
+
+  :nth-child(2) {
     height: 19px;
   }
 }
-.banners::-webkit-scrollbar {    display: none;}
 
+.banners::-webkit-scrollbar {
+  display: none;
+}
 
+.boxes {
+  padding: 0 10px;
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-evenly;
+    height: 415px;
 
+  }
+
+  &__element {
+    position: relative;
+    color: white;
+    max-width: 935px;
+    width: 100%;
+    height: auto;
+
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 8% 12%;
+
+    @media (min-width: $tablet) {
+      line-height: 32px;
+      padding: 10% 12%;
+      font-size: 1rem;
+    }
+  }
+
+  &__elementA {
+    display: inline-block;
+    color: white;
+    background: black;
+    padding: 0 5px;
+  }
+
+  &__elementB {
+    display: inline-block;
+    color: white;
+    background: $color-buttons;
+    padding: 0 5px;
+  }
+
+  &__icons {
+    display: flex;
+    width: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: -15px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}
+
+.button {
+  background: $color-buttons;
+  padding: 2% 11%;
+  color: white;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 10px;
+  position: absolute;
+
+  &-firstBox {
+    bottom: 10px;
+  }
+
+  &-secondBox {
+    bottom: 15px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 3% 12%;
+    &-firstBox {
+      bottom: 30px;
+    }
+  }
+
+}
