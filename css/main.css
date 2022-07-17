@@ -103,4 +103,32 @@ a {
     text-align: left;
   }
 }
+.banners {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  height: 30px;
+}
+@media (min-width: 992px) {
+  .banners {
+    width: 1320px;
+  }
+}
+.banners img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+}
+.banners :nth-child(2) {
+  height: 19px;
+}
+
+.banners::-webkit-scrollbar {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
