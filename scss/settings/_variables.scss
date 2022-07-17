@@ -1,2 +1,14 @@
 $desktop: 992px;
 $tablet: 768px;
+
+@keyframes float {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(160px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}

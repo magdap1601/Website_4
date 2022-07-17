@@ -2,7 +2,9 @@
 @import "settings/variables";
 @import "settings/resetStyle";
 //navigation
+
 .containerBox {
+  margin: 0 auto;
   @media (min-width: $desktop) {
     display: flex;
     max-width: 1920px;
@@ -11,12 +13,11 @@
 }
 
 .navigation {
-
   @media (min-width: $desktop) {
     display: flex;
+    justify-content: center;
     width: 100vw;
     height: 80px;
-    border-bottom: 1px solid black;
     box-shadow: 0 1px 21px rgba(0, 0, 0, 0.0520088);
   }
 
@@ -36,9 +37,9 @@
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
   }
 
   &__elementList {
@@ -172,18 +173,18 @@
 
 //banners
 .banners {
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  height: 30px;
-
-
+  animation: float 6s ease-in-out infinite;
   @media (min-width: $desktop) {
-    width: calc(1920px - 600px);
+    animation: none;
+  }
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  //overflow-x: auto;
+  height: 80px;
+  width: 100vw;
+  @media (min-width: $desktop) {
+    padding: 0 200px;
   }
 
   img {
@@ -289,6 +290,5 @@
       bottom: 30px;
     }
   }
-
 }
 
